@@ -65,28 +65,23 @@ Estudiante de **Ingeniería Informática en la Universitat Politècnica de Valè
 
 ## ✨ Sobre este portfolio
 
-Web personal hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin compilación y lista para **GitHub Pages**.
+Web personal con un diseño sobrio de estilo editorial, hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin compilación y lista para **GitHub Pages**.
 
-| Animación                        | Descripción                                                                  |
-| -------------------------------- | ---------------------------------------------------------------------------- |
-| 🌌 **Fondo de partículas**       | Red de nodos en `<canvas>` que reacciona al ratón                            |
-| 🔤 **Título por letras**         | Cada carácter entra con un rebote y tiene brillo degradado al pasar el ratón |
-| ⌨️ **Máquina de escribir**       | Va rotando entre roles y stack                                               |
-| 👀 **Aparición al hacer scroll** | Las secciones y las etiquetas de habilidades aparecen en cascada             |
-| 🔢 **Contadores**                | Los proyectos y la hackathon cuentan desde 0                                 |
-| 🎴 **Tarjetas 3D**               | Inclinación con perspectiva y foco de luz que sigue al cursor                |
-| 🧲 **Botones magnéticos**        | Los botones se mueven hacia el cursor                                        |
-| 🗂️ **Filtro de proyectos**       | Universidad, Hackathon o Personal, con transición animada                    |
-| 🧭 **Línea de tiempo**           | Formación e idiomas                                                          |
-| 📱 **Responsive y accesible**    | Menú móvil y respeto a `prefers-reduced-motion`                              |
+- **Diseño:** tipografía serif (Newsreader) para los títulos e Inter para el texto, con un único color de acento.
+- **Modo claro y oscuro** automático, según la preferencia del sistema.
+- **Animaciones discretas:** entrada escalonada del encabezado, aparición de secciones al hacer scroll, contadores y barra de progreso de lectura.
+- **Navegación:** se marca la sección visible y hay un menú adaptado a móvil.
+- **Proyectos filtrables** por Universidad, Hackathon o Personal.
+- **Accesible:** foco visible, etiquetas ARIA y respeto a `prefers-reduced-motion`.
+- **Foto opcional:** guarda una imagen cuadrada como `foto.jpg` y descomenta la línea indicada en `index.html`. Si no hay foto, se muestra un monograma.
 
 ### Estructura
 
 ```
 .
 ├── index.html   # Contenido y secciones
-├── style.css    # Estilos, tema y animaciones
-├── script.js    # Interacciones y configuración (CONFIG)
+├── style.css    # Estilos, tema claro/oscuro y animaciones
+├── script.js    # Interacciones
 └── README.md
 ```
 
