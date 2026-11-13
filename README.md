@@ -85,26 +85,8 @@ Web personal con estética de herramienta de desarrollo, hecha con **HTML, CSS y
 └── README.md
 ```
 
-### Ejecutar en local
-
-```bash
-npx serve .
-```
-
-### Publicar en GitHub Pages
-
-1. Crea un repositorio llamado **`XeG05.github.io`**.
-2. Sube los archivos:
-   ```bash
-   git init
-   git add index.html style.css script.js README.md
-   git commit -m "Portfolio personal"
-   git branch -M main
-   git remote add origin https://github.com/XeG05/XeG05.github.io.git
-   git push -u origin main
-   ```
-3. En **Settings → Pages** elige la rama `main` y la carpeta `/ (root)`.
-4. En un par de minutos estará en línea en **https://XeG05.github.io** 🎉
+## Portfolio GitPages
+**https://XeG05.github.io** 🎉
 
 ## 📈 Estadísticas
 
