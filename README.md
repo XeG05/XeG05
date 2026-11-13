@@ -32,7 +32,7 @@ Estudiante de **Ingeniería Informática en la Universitat Politècnica de Valè
 ![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=databricks&logoColor=white)
-![Python](https://img.shields.io/badge/Python_(básico)-3776AB?style=flat-square&logo=python&logoColor=white)
+![Python](<https://img.shields.io/badge/Python_(básico)-3776AB?style=flat-square&logo=python&logoColor=white>)
 <br/>
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
@@ -49,16 +49,16 @@ Estudiante de **Ingeniería Informática en la Universitat Politècnica de Valè
 
 ## 🚀 Proyectos
 
-| Proyecto | Descripción | Stack |
-|---|---|---|
-| 🎮 **Life Quest** <br/><sub>UPV · equipo de 4 · 09/2026 – actualidad</sub> | Aplicación web gamificada que convierte hábitos en misiones con progresión. Backend, frontend y base de datos. | Java · React · JavaScript · PostgreSQL |
-| 🛒 **SmartCart** <br/><sub>Hackathon · 10/2026</sub> | Tienda sin cajas: identifica al cliente al entrar, detecta con IA los productos que coge y cobra automáticamente a la salida. MVP con visión artificial. | Java · Visión artificial |
-| 🗳️ **Votify** <br/><sub>UPV · equipo de 4 · 02/2026 – 06/2026</sub> | Aplicación web para crear y gestionar votaciones en eventos públicos. Todas las capas de la aplicación. | C# · PostgreSQL |
-| ⚡ **Portfolio** <br/><sub>Personal · 2026</sub> | Este repositorio: web personal animada, sin frameworks. | HTML · CSS · JavaScript |
+| Proyecto                                                                   | Descripción                                                                                                                                              | Stack                                  |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| 🎮 **Life Quest** <br/><sub>UPV · equipo de 4 · 09/2026 – actualidad</sub> | Aplicación web gamificada que convierte hábitos en misiones con progresión. Backend, frontend y base de datos.                                           | Java · React · JavaScript · PostgreSQL |
+| 🛒 **SmartCart** <br/><sub>Hackathon · 10/2026</sub>                       | Tienda sin cajas: identifica al cliente al entrar, detecta con IA los productos que coge y cobra automáticamente a la salida. MVP con visión artificial. | Java · Visión artificial               |
+| 🗳️ **Votify** <br/><sub>UPV · equipo de 4 · 02/2026 – 06/2026</sub>        | Aplicación web para crear y gestionar votaciones en eventos públicos. Todas las capas de la aplicación.                                                  | C# · PostgreSQL                        |
+| ⚡ **Portfolio** <br/><sub>Personal · 2026</sub>                           | Este repositorio: web personal animada, sin frameworks.                                                                                                  | HTML · CSS · JavaScript                |
 
 ## 🎓 Formación e idiomas
 
-- **Grado en Ingeniería Informática**, Universitat Politècnica de València (ETSINF), desde 09/2022. Nota media **7,8/10**.
+- **Grado en Ingeniería Informática**, Universitat Politècnica de València (ETSINF), desde 09/2022.
 - 🇪🇸 Español (nativo) · Valenciano (B2) · 🇬🇧 Inglés (B1, preparando Cambridge B2 First)
 
 ---
@@ -67,18 +67,18 @@ Estudiante de **Ingeniería Informática en la Universitat Politècnica de Valè
 
 Web personal hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin compilación y lista para **GitHub Pages**.
 
-| Animación | Descripción |
-|---|---|
-| 🌌 **Fondo de partículas** | Red de nodos en `<canvas>` que reacciona al ratón |
-| 🔤 **Título por letras** | Cada carácter entra con un rebote y tiene brillo degradado al pasar el ratón |
-| ⌨️ **Máquina de escribir** | Va rotando entre roles y stack |
-| 👀 **Aparición al hacer scroll** | Las secciones y las etiquetas de habilidades aparecen en cascada |
-| 🔢 **Contadores** | Los proyectos y la hackathon cuentan desde 0 |
-| 🎴 **Tarjetas 3D** | Inclinación con perspectiva y foco de luz que sigue al cursor |
-| 🧲 **Botones magnéticos** | Los botones se mueven hacia el cursor |
-| 🗂️ **Filtro de proyectos** | Universidad, Hackathon o Personal, con transición animada |
-| 🧭 **Línea de tiempo** | Formación e idiomas |
-| 📱 **Responsive y accesible** | Menú móvil y respeto a `prefers-reduced-motion` |
+| Animación                        | Descripción                                                                  |
+| -------------------------------- | ---------------------------------------------------------------------------- |
+| 🌌 **Fondo de partículas**       | Red de nodos en `<canvas>` que reacciona al ratón                            |
+| 🔤 **Título por letras**         | Cada carácter entra con un rebote y tiene brillo degradado al pasar el ratón |
+| ⌨️ **Máquina de escribir**       | Va rotando entre roles y stack                                               |
+| 👀 **Aparición al hacer scroll** | Las secciones y las etiquetas de habilidades aparecen en cascada             |
+| 🔢 **Contadores**                | Los proyectos y la hackathon cuentan desde 0                                 |
+| 🎴 **Tarjetas 3D**               | Inclinación con perspectiva y foco de luz que sigue al cursor                |
+| 🧲 **Botones magnéticos**        | Los botones se mueven hacia el cursor                                        |
+| 🗂️ **Filtro de proyectos**       | Universidad, Hackathon o Personal, con transición animada                    |
+| 🧭 **Línea de tiempo**           | Formación e idiomas                                                          |
+| 📱 **Responsive y accesible**    | Menú móvil y respeto a `prefers-reduced-motion`                              |
 
 ### Estructura
 

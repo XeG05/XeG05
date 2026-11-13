@@ -1,77 +1,129 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ganen Xia · Ingeniero de Software Junior</title>
-  <meta name="description" content="Portfolio de Ganen Xia, Ingeniero de Software Junior y desarrollador full stack en Valencia. Java, C#, React y PostgreSQL." />
-  <meta property="og:title" content="Ganen Xia · Ingeniero de Software Junior" />
-  <meta property="og:description" content="Desarrollador full stack en Valencia. Java, C#, React y PostgreSQL." />
-  <meta property="og:image" content="https://avatars.githubusercontent.com/u/197801957?v=4" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
-</head>
-<body>
-  <canvas id="bg"></canvas>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="progress" aria-hidden="true"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ganen Xia · Ingeniero de Software Junior</title>
+    <meta
+      name="description"
+      content="Portfolio de Ganen Xia, Ingeniero de Software Junior y desarrollador full stack en Valencia. Java, C#, React y PostgreSQL."
+    />
+    <meta
+      property="og:title"
+      content="Ganen Xia · Ingeniero de Software Junior"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollador full stack en Valencia. Java, C#, React y PostgreSQL."
+    />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/197801957?v=4"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"
+    />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
 
-  <header class="nav">
-    <a href="#inicio" class="logo">&lt;GanenXia /&gt;</a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-    <nav class="nav-links">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#formacion">Formación</a>
-      <a href="#contacto" class="btn btn-small">Contacto</a>
-    </nav>
-  </header>
+    <header class="nav">
+      <a href="#inicio" class="logo">&lt;GanenXia /&gt;</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto" class="btn btn-small">Contacto</a>
+      </nav>
+    </header>
 
-  <main>
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <p class="mono hero-kicker reveal">Hola, mundo 👋 soy</p>
-      <h1 class="hero-title">
-        <span class="split" data-text="Ganen Xia">Ganen Xia</span>
-      </h1>
-      <h2 class="hero-sub reveal">
-        <span class="mono">&gt;</span> <span id="typed"></span><span class="caret">|</span>
-      </h2>
-      <p class="hero-text reveal">
-        Estudiante de Ingeniería Informática en la <strong>UPV</strong> y desarrollador full stack.
-        Construyo aplicaciones web completas con <strong>Java, C#, React y PostgreSQL</strong>, trabajando en equipo con Scrum.
-      </p>
-      <p class="badge-open reveal"><span class="dot"></span> Disponible · incorporación inmediata</p>
-      <div class="hero-cta reveal">
-        <a href="#proyectos" class="btn magnetic">Ver proyectos</a>
-        <a href="#contacto" class="btn btn-ghost magnetic">Contactar</a>
-      </div>
-      <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar"><span></span></a>
-    </section>
-
-    <!-- SOBRE MI -->
-    <section id="sobre-mi" class="section">
-      <h2 class="section-title reveal"><span class="mono">01.</span> Sobre mí</h2>
-      <div class="about">
-        <div class="about-text reveal">
-          <p>Soy estudiante de <strong>Ingeniería Informática en la Universitat Politècnica de València (ETSINF)</strong>, con experiencia como desarrollador full stack en proyectos en equipo de principio a fin: backend, frontend y base de datos.</p>
-          <p>He desarrollado aplicaciones web completas y un <strong>MVP con visión artificial</strong> en una hackathon. Ahora busco mi <strong>primer puesto como Ingeniero de Software Junior</strong> para seguir aprendiendo y aportar a un equipo.</p>
-          <div class="stats">
-            <div class="stat"><span class="counter" data-target="3">0</span><small>proyectos full stack</small></div>
-            <div class="stat"><span class="counter" data-target="1">0</span><small>hackathon con MVP</small></div>
-          </div>
+    <main>
+      <!-- HERO -->
+      <section id="inicio" class="hero">
+        <p class="mono hero-kicker reveal">Hola, mundo 👋 soy</p>
+        <h1 class="hero-title">
+          <span class="split" data-text="Ganen Xia">Ganen Xia</span>
+        </h1>
+        <h2 class="hero-sub reveal">
+          <span class="mono">&gt;</span> <span id="typed"></span
+          ><span class="caret">|</span>
+        </h2>
+        <p class="hero-text reveal">
+          Estudiante de Ingeniería Informática en la <strong>UPV</strong> y
+          desarrollador full stack. Construyo aplicaciones web completas con
+          <strong>Java, C#, React y PostgreSQL</strong>, trabajando en equipo
+          con Scrum.
+        </p>
+        <p class="badge-open reveal">
+          <span class="dot"></span> Disponible · incorporación inmediata
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#proyectos" class="btn magnetic">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost magnetic">Contactar</a>
         </div>
-        <div class="about-card reveal tilt">
-          <div class="avatar">
-            <span><img src="https://avatars.githubusercontent.com/u/197801957?v=4" alt="Foto de perfil de Ganen Xia" width="102" height="102" /></span>
+        <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar"
+          ><span></span
+        ></a>
+      </section>
+
+      <!-- SOBRE MI -->
+      <section id="sobre-mi" class="section">
+        <h2 class="section-title reveal">
+          <span class="mono">01.</span> Sobre mí
+        </h2>
+        <div class="about">
+          <div class="about-text reveal">
+            <p>
+              Soy estudiante de
+              <strong
+                >Ingeniería Informática en la Universitat Politècnica de
+                València (ETSINF)</strong
+              >, con experiencia como desarrollador full stack en proyectos en
+              equipo de principio a fin: backend, frontend y base de datos.
+            </p>
+            <p>
+              He desarrollado aplicaciones web completas y un
+              <strong>MVP con visión artificial</strong> en una hackathon. Ahora
+              busco mi
+              <strong>primer puesto como Ingeniero de Software Junior</strong>
+              para seguir aprendiendo y aportar a un equipo.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <span class="counter" data-target="3">0</span
+                ><small>proyectos full stack</small>
+              </div>
+              <div class="stat">
+                <span class="counter" data-target="1">0</span
+                ><small>hackathon con MVP</small>
+              </div>
+            </div>
           </div>
-          <pre class="mono code"><code><span class="k">const</span> ganen = {
+          <div class="about-card reveal tilt">
+            <div class="avatar">
+              <span
+                ><img
+                  src="https://avatars.githubusercontent.com/u/197801957?v=4"
+                  alt="Foto de perfil de Ganen Xia"
+                  width="102"
+                  height="102"
+              /></span>
+            </div>
+            <pre class="mono code"><code><span class="k">const</span> ganen = {
   rol: <span class="s">"Software Engineer Jr."</span>,
   stack: [<span class="s">"Java"</span>, <span class="s">"C#"</span>, <span class="s">"React"</span>],
   db: <span class="s">"PostgreSQL"</span>,
@@ -80,127 +132,238 @@
   idiomas: [<span class="s">"ES"</span>, <span class="s">"VAL"</span>, <span class="s">"EN"</span>],
   disponible: <span class="n">true</span>
 };</code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section">
-      <h2 class="section-title reveal"><span class="mono">02.</span> Habilidades</h2>
-      <div class="skill-groups">
-        <div class="skill-group reveal tilt">
-          <h3><span class="icon">⌨️</span> Lenguajes</h3>
-          <ul class="chips"><li>Java</li><li>C#</li><li>JavaScript</li><li>SQL</li><li class="soft">Python <em>básico</em></li></ul>
-        </div>
-        <div class="skill-group reveal tilt">
-          <h3><span class="icon">🌐</span> Desarrollo web</h3>
-          <ul class="chips"><li>React</li><li>HTML</li><li>CSS</li></ul>
-        </div>
-        <div class="skill-group reveal tilt">
-          <h3><span class="icon">🗄️</span> Bases de datos</h3>
-          <ul class="chips"><li>PostgreSQL</li></ul>
-        </div>
-        <div class="skill-group reveal tilt">
-          <h3><span class="icon">🛠️</span> Herramientas</h3>
-          <ul class="chips"><li>Git</li><li>GitHub</li><li>Visual Studio</li><li>VS Code</li><li>Worki (TUNE-UP)</li></ul>
-        </div>
-        <div class="skill-group reveal tilt wide">
-          <h3><span class="icon">🔄</span> Metodologías</h3>
-          <ul class="chips"><li>Scrum</li><li>Agile</li><li>Trabajo en equipo</li></ul>
-        </div>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span>Java</span><span>C#</span><span>React</span><span>JavaScript</span><span>PostgreSQL</span><span>SQL</span><span>Git</span><span>Scrum</span><span>HTML</span><span>CSS</span><span>Visión artificial</span>
-          <span>Java</span><span>C#</span><span>React</span><span>JavaScript</span><span>PostgreSQL</span><span>SQL</span><span>Git</span><span>Scrum</span><span>HTML</span><span>CSS</span><span>Visión artificial</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROYECTOS -->
-    <section id="proyectos" class="section">
-      <h2 class="section-title reveal"><span class="mono">03.</span> Proyectos</h2>
-      <div class="filters reveal">
-        <button class="filter active" data-filter="all">Todos</button>
-        <button class="filter" data-filter="uni">Universidad</button>
-        <button class="filter" data-filter="hack">Hackathon</button>
-        <button class="filter" data-filter="personal">Personal</button>
-      </div>
-      <div class="projects" id="projects">
-        <article class="project reveal tilt featured" data-cat="uni">
-          <div class="project-top"><span class="folder">🎮</span><span class="pill live">En desarrollo</span></div>
-          <h3>Life Quest</h3>
-          <p class="project-meta mono">UPV · Equipo de 4 · Full stack · 09/2026 – actualidad</p>
-          <p>Aplicación web gamificada que convierte tus hábitos en misiones con progresión. Participo en el backend, el frontend y la base de datos.</p>
-          <ul class="tags"><li>Java</li><li>React</li><li>JavaScript</li><li>PostgreSQL</li></ul>
-        </article>
-        <article class="project reveal tilt featured" data-cat="hack">
-          <div class="project-top"><span class="folder">🛒</span><span class="pill">Hackathon</span></div>
-          <h3>SmartCart</h3>
-          <p class="project-meta mono">Hackathon · 10/2026</p>
-          <p>Tienda sin cajas: asigna un identificador a cada cliente al entrar, detecta con IA los productos que coge y los añade a su carrito para el pago automático a la salida. MVP funcional con modelos de visión artificial gratuitos.</p>
-          <ul class="tags"><li>Java</li><li>Visión artificial</li><li>IA</li></ul>
-        </article>
-        <article class="project reveal tilt" data-cat="uni">
-          <div class="project-top"><span class="folder">🗳️</span><span class="pill">Completado</span></div>
-          <h3>Votify</h3>
-          <p class="project-meta mono">UPV · Equipo de 4 · Full stack · 02/2026 – 06/2026</p>
-          <p>Aplicación web para crear y gestionar votaciones en eventos públicos. Participé en todas las capas de la aplicación.</p>
-          <ul class="tags"><li>C#</li><li>PostgreSQL</li><li>Visual Studio</li></ul>
-        </article>
-        <article class="project reveal tilt" data-cat="personal">
-          <div class="project-top"><span class="folder">⚡</span><a href="https://github.com/XeG05" target="_blank" rel="noopener" aria-label="Ver en GitHub">↗</a></div>
-          <h3>Este portfolio</h3>
-          <p class="project-meta mono">Personal · 2026</p>
-          <p>Web personal animada: fondo de partículas, tarjetas 3D, efecto máquina de escribir y filtro de proyectos. Sin frameworks.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- FORMACION -->
-    <section id="formacion" class="section">
-      <h2 class="section-title reveal"><span class="mono">04.</span> Formación</h2>
-      <ol class="timeline">
-        <li class="reveal">
-          <span class="when mono">09/2022 – actualidad</span>
-          <h3>Grado en Ingeniería Informática</h3>
-          <p class="where">Universitat Politècnica de València · ETSINF</p>
-          <p>Nota media <strong>7,8/10</strong>. Asignaturas destacadas: Diseño de Software, Análisis y Validación de Software, Ingeniería del Software, Bases de Datos y Programación.</p>
-        </li>
-        <li class="reveal">
-          <span class="when mono">Idiomas</span>
-          <h3>Comunicación</h3>
-          <div class="langs">
-            <div class="lang"><span>Español</span><small>Nativo</small></div>
-            <div class="lang"><span>Valenciano</span><small>B2</small></div>
-            <div class="lang"><span>Inglés</span><small>B1 · preparando Cambridge B2 First</small></div>
           </div>
-        </li>
-        <li class="reveal">
-          <span class="when mono">Extra</span>
-          <h3>Información adicional</h3>
-          <p>Carné de conducir B · Disponibilidad completa e incorporación inmediata.</p>
-        </li>
-      </ol>
-    </section>
+        </div>
+      </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="section contact">
-      <h2 class="section-title center reveal"><span class="mono">05.</span> ¿Hablamos?</h2>
-      <p class="reveal">Busco mi <strong>primer puesto como Ingeniero de Software Junior</strong>. Si tienes una oportunidad o un proyecto interesante, escríbeme: respondo rápido.</p>
-      <a href="mailto:ganenxia@gmail.com" class="btn btn-big magnetic reveal">ganenxia@gmail.com</a>
-      <div class="socials reveal">
-        <a href="https://github.com/XeG05" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/ganen-xia-259152377" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
-  </main>
+      <!-- HABILIDADES -->
+      <section id="habilidades" class="section">
+        <h2 class="section-title reveal">
+          <span class="mono">02.</span> Habilidades
+        </h2>
+        <div class="skill-groups">
+          <div class="skill-group reveal tilt">
+            <h3><span class="icon">⌨️</span> Lenguajes</h3>
+            <ul class="chips">
+              <li>Java</li>
+              <li>C#</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li class="soft">Python <em>básico</em></li>
+            </ul>
+          </div>
+          <div class="skill-group reveal tilt">
+            <h3><span class="icon">🌐</span> Desarrollo web</h3>
+            <ul class="chips">
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal tilt">
+            <h3><span class="icon">🗄️</span> Bases de datos</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal tilt">
+            <h3><span class="icon">🛠️</span> Herramientas</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Visual Studio</li>
+              <li>VS Code</li>
+              <li>Worki (TUNE-UP)</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal tilt wide">
+            <h3><span class="icon">🔄</span> Metodologías</h3>
+            <ul class="chips">
+              <li>Scrum</li>
+              <li>Agile</li>
+              <li>Trabajo en equipo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>Java</span><span>C#</span><span>React</span
+            ><span>JavaScript</span><span>PostgreSQL</span><span>SQL</span
+            ><span>Git</span><span>Scrum</span><span>HTML</span><span>CSS</span
+            ><span>Visión artificial</span> <span>Java</span><span>C#</span
+            ><span>React</span><span>JavaScript</span><span>PostgreSQL</span
+            ><span>SQL</span><span>Git</span><span>Scrum</span><span>HTML</span
+            ><span>CSS</span><span>Visión artificial</span>
+          </div>
+        </div>
+      </section>
 
-  <footer class="footer mono">
-    Diseñado y construido por Ganen Xia · Valencia · <span id="year"></span>
-  </footer>
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="section">
+        <h2 class="section-title reveal">
+          <span class="mono">03.</span> Proyectos
+        </h2>
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="uni">Universidad</button>
+          <button class="filter" data-filter="hack">Hackathon</button>
+          <button class="filter" data-filter="personal">Personal</button>
+        </div>
+        <div class="projects" id="projects">
+          <article class="project reveal tilt featured" data-cat="uni">
+            <div class="project-top">
+              <span class="folder">🎮</span
+              ><span class="pill live">En desarrollo</span>
+            </div>
+            <h3>Life Quest</h3>
+            <p class="project-meta mono">
+              UPV · Equipo de 4 · Full stack · 09/2026 – actualidad
+            </p>
+            <p>
+              Aplicación web gamificada que convierte tus hábitos en misiones
+              con progresión. Participo en el backend, el frontend y la base de
+              datos.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="project reveal tilt featured" data-cat="hack">
+            <div class="project-top">
+              <span class="folder">🛒</span><span class="pill">Hackathon</span>
+            </div>
+            <h3>SmartCart</h3>
+            <p class="project-meta mono">Hackathon · 10/2026</p>
+            <p>
+              Tienda sin cajas: asigna un identificador a cada cliente al
+              entrar, detecta con IA los productos que coge y los añade a su
+              carrito para el pago automático a la salida. MVP funcional con
+              modelos de visión artificial gratuitos.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>Visión artificial</li>
+              <li>IA</li>
+            </ul>
+          </article>
+          <article class="project reveal tilt" data-cat="uni">
+            <div class="project-top">
+              <span class="folder">🗳️</span><span class="pill">Completado</span>
+            </div>
+            <h3>Votify</h3>
+            <p class="project-meta mono">
+              UPV · Equipo de 4 · Full stack · 02/2026 – 06/2026
+            </p>
+            <p>
+              Aplicación web para crear y gestionar votaciones en eventos
+              públicos. Participé en todas las capas de la aplicación.
+            </p>
+            <ul class="tags">
+              <li>C#</li>
+              <li>PostgreSQL</li>
+              <li>Visual Studio</li>
+            </ul>
+          </article>
+          <article class="project reveal tilt" data-cat="personal">
+            <div class="project-top">
+              <span class="folder">⚡</span
+              ><a
+                href="https://github.com/XeG05"
+                target="_blank"
+                rel="noopener"
+                aria-label="Ver en GitHub"
+                >↗</a
+              >
+            </div>
+            <h3>Este portfolio</h3>
+            <p class="project-meta mono">Personal · 2026</p>
+            <p>
+              Web personal animada: fondo de partículas, tarjetas 3D, efecto
+              máquina de escribir y filtro de proyectos. Sin frameworks.
+            </p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <script src="script.js"></script>
-</body>
+      <!-- FORMACION -->
+      <section id="formacion" class="section">
+        <h2 class="section-title reveal">
+          <span class="mono">04.</span> Formación
+        </h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <span class="when mono">09/2022 – actualidad</span>
+            <h3>Grado en Ingeniería Informática</h3>
+            <p class="where">Universitat Politècnica de València · ETSINF</p>
+            <p>
+              Asignaturas destacadas: Diseño de Software, Análisis y Validación
+              de Software, Ingeniería del Software, Bases de Datos y
+              Programación.
+            </p>
+          </li>
+          <li class="reveal">
+            <span class="when mono">Idiomas</span>
+            <h3>Comunicación</h3>
+            <div class="langs">
+              <div class="lang"><span>Español</span><small>Nativo</small></div>
+              <div class="lang"><span>Valenciano</span><small>B2</small></div>
+              <div class="lang">
+                <span>Inglés</span
+                ><small>B1 · preparando Cambridge B2 First</small>
+              </div>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="when mono">Extra</span>
+            <h3>Información adicional</h3>
+            <p>
+              Carné de conducir B · Disponibilidad completa e incorporación
+              inmediata.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- CONTACTO -->
+      <section id="contacto" class="section contact">
+        <h2 class="section-title center reveal">
+          <span class="mono">05.</span> ¿Hablamos?
+        </h2>
+        <p class="reveal">
+          Busco mi
+          <strong>primer puesto como Ingeniero de Software Junior</strong>. Si
+          tienes una oportunidad o un proyecto interesante, escríbeme: respondo
+          rápido.
+        </p>
+        <a href="mailto:ganenxia@gmail.com" class="btn btn-big magnetic reveal"
+          >ganenxia@gmail.com</a
+        >
+        <div class="socials reveal">
+          <a href="https://github.com/XeG05" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ganen-xia-259152377"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer mono">
+      Diseñado y construido por Ganen Xia · Valencia · <span id="year"></span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
