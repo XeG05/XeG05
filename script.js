@@ -2,8 +2,6 @@
    CONFIGURACIÓN — edita esto con tus datos
    ============================================================ */
 const CONFIG = {
-  githubUser: "XeG05",     // tu usuario de GitHub → carga tus repos públicos
-  repoCount: 6,            // cuántos repos mostrar
   roles: [                 // frases del efecto máquina de escribir
     "Ingeniero de Software Junior",
     "Desarrollador Full Stack",
@@ -166,48 +164,6 @@ document.querySelectorAll(".filter").forEach((f) =>
     });
   })
 );
-
-/* ---------- Repos de GitHub ---------- */
-async function loadRepos() {
-  const box = document.getElementById("repos");
-  if (!CONFIG.githubUser) return;
-  box.innerHTML = '<p class="mono muted">Cargando repos…</p>';
-  try {
-    const res = await fetch(
-      `https://api.github.com/users/${encodeURIComponent(CONFIG.githubUser)}/repos?sort=updated&per_page=30`
-    );
-    if (!res.ok) throw new Error(res.status);
-    const repos = (await res.json())
-      .filter((r) => !r.fork)
-      .sort((a, b) => b.stargazers_count - a.stargazers_count)
-      .slice(0, CONFIG.repoCount);
-    if (!repos.length) {
-      box.innerHTML = `<p class="mono muted">Aún no hay repos públicos… ¡pronto habrá novedades! 🚀 <a class="accent-link" href="https://github.com/${CONFIG.githubUser}" target="_blank" rel="noopener">Sígueme en GitHub ↗</a></p>`;
-      return;
-    }
-    box.innerHTML = "";
-    repos.forEach((r) => {
-      const a = document.createElement("a");
-      a.className = "repo reveal";
-      a.href = r.html_url;
-      a.target = "_blank";
-      a.rel = "noopener";
-      const h = document.createElement("h4");
-      h.textContent = r.name;
-      const p = document.createElement("p");
-      p.textContent = r.description || "Sin descripción";
-      const meta = document.createElement("div");
-      meta.className = "meta";
-      meta.textContent = `${r.language ? "● " + r.language + "   " : ""}★ ${r.stargazers_count}   ⑂ ${r.forks_count}`;
-      a.append(h, p, meta);
-      box.appendChild(a);
-    });
-    observeReveals(box);
-  } catch {
-    box.innerHTML = '<p class="mono muted">No se pudieron cargar los repos ahora mismo.</p>';
-  }
-}
-loadRepos();
 
 /* ---------- Fondo de partículas conectadas ---------- */
 (function particles() {

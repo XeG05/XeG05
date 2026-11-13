@@ -73,12 +73,11 @@ Web personal hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin comp
 | 🔤 **Título por letras** | Cada carácter entra con un rebote y tiene brillo degradado al pasar el ratón |
 | ⌨️ **Máquina de escribir** | Va rotando entre roles y stack |
 | 👀 **Aparición al hacer scroll** | Las secciones y las etiquetas de habilidades aparecen en cascada |
-| 🔢 **Contadores** | La nota media y los proyectos cuentan desde 0 |
+| 🔢 **Contadores** | Los proyectos y la hackathon cuentan desde 0 |
 | 🎴 **Tarjetas 3D** | Inclinación con perspectiva y foco de luz que sigue al cursor |
 | 🧲 **Botones magnéticos** | Los botones se mueven hacia el cursor |
 | 🗂️ **Filtro de proyectos** | Universidad, Hackathon o Personal, con transición animada |
 | 🧭 **Línea de tiempo** | Formación e idiomas |
-| 🐙 **Repos de GitHub** | Se cargan solos desde la API pública |
 | 📱 **Responsive y accesible** | Menú móvil y respeto a `prefers-reduced-motion` |
 
 ### Estructura
