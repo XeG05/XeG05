@@ -86,7 +86,7 @@ Web personal con estética de herramienta de desarrollo, hecha con **HTML, CSS y
 ```
 
 ## Portfolio GitPages
-**xeg05.github.io/XeG05/** 🎉
+Puedes ver puedes ver el portafolio completo en [Portafolio web](https://xeg05.github.io/XeG05/) o conectar conmigo en [LinkedIn](https://www.linkedin.com/in/ganen-xia-259152377/). 🎉
 
 ## 📈 Estadísticas
 
