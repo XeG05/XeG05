@@ -10,22 +10,22 @@
   <meta property="og:description" content="Desarrollador full stack en Valencia. Java, C#, React y PostgreSQL." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231d3fbf'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='white'>GX</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2315171c'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-size='26' font-weight='700' fill='%2378a0ff'>&gt;_</text></svg>" />
 </head>
 <body>
   <div class="progress" aria-hidden="true"></div>
 
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#inicio" class="brand"><span class="brand-mark">GX</span> Ganen Xia</a>
+      <a href="#inicio" class="brand"><span class="prompt">~/</span>ganen-xia<span class="cursor" aria-hidden="true">_</span></a>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
       <nav class="nav-links" aria-label="Principal">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#formacion">Formación</a>
+        <a href="#sobre-mi"><span class="idx">01</span>Sobre mí</a>
+        <a href="#stack"><span class="idx">02</span>Stack</a>
+        <a href="#proyectos"><span class="idx">03</span>Proyectos</a>
+        <a href="#formacion"><span class="idx">04</span>Formación</a>
         <a href="#contacto" class="btn btn-sm">Contacto</a>
       </nav>
     </div>
@@ -35,113 +35,176 @@
     <!-- HERO -->
     <section id="inicio" class="hero container">
       <div class="hero-text">
-        <p class="eyebrow fade">Ingeniero de Software Junior · Valencia</p>
-        <h1 class="fade">Desarrollo aplicaciones web completas, <em>del backend a la interfaz.</em></h1>
+        <p class="eyebrow fade"><span class="dot" aria-hidden="true"></span> Disponible · incorporación inmediata</p>
+        <h1 class="fade">Ganen Xia</h1>
+        <p class="role fade">Ingeniero de Software Junior <span class="sep">/</span> Full Stack</p>
         <p class="lead fade">
-          Estudiante de Ingeniería Informática en la Universitat Politècnica de València.
-          Experiencia full stack en equipo con Java, C#, React y PostgreSQL bajo Scrum.
+          Estudiante de Ingeniería Informática en la <strong>UPV</strong>. Diseño y desarrollo aplicaciones web
+          completas, del modelo de datos a la interfaz, trabajando en equipo con <strong>Scrum</strong>.
         </p>
+        <ul class="hero-stack fade" aria-label="Tecnologías principales">
+          <li>Java</li><li>C#</li><li>React</li><li>PostgreSQL</li>
+        </ul>
         <div class="hero-cta fade">
           <a href="#proyectos" class="btn">Ver proyectos</a>
-          <a href="mailto:ganenxia@gmail.com" class="btn btn-outline">Escríbeme</a>
+          <a href="https://github.com/XeG05" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/ganen-xia-259152377" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn ↗</a>
         </div>
-        <p class="status fade"><span class="dot" aria-hidden="true"></span> Disponible · incorporación inmediata</p>
       </div>
-      <figure class="hero-photo fade">
-        <div class="portrait">
-          <span class="monogram" aria-hidden="true">GX</span>
-          <!-- Para usar tu foto: guarda una imagen cuadrada como foto.jpg y descomenta la línea siguiente -->
-          <!-- <img src="foto.jpg" alt="Retrato de Ganen Xia" width="420" height="420" /> -->
+
+      <div class="terminal fade" role="img" aria-label="Terminal con el perfil de Ganen Xia: Ingeniero de Software Junior en Valencia, stack Java, C#, React y PostgreSQL, disponible.">
+        <div class="term-bar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="term-title">ganen@valencia: ~</span>
         </div>
-        <figcaption>
-          <span><strong>Full Stack</strong>Java · C# · React</span>
-          <span><strong>UPV</strong>ETSINF</span>
-        </figcaption>
-      </figure>
+        <pre class="term-body" aria-hidden="true"><code class="term-ghost" id="term-ghost"></code><code id="term"></code></pre>
+      </div>
     </section>
 
     <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="section container">
       <header class="section-head reveal">
-        <span class="section-num">01</span>
+        <span class="section-num">01 <span>// sobre-mi</span></span>
         <h2>Sobre mí</h2>
       </header>
       <div class="section-body">
         <div class="prose reveal">
-          <p class="large">Me gusta construir software útil y bien hecho, entendiendo cada capa: desde el modelo de datos hasta la experiencia de quien lo usa.</p>
-          <p>Estudio <strong>Ingeniería Informática en la ETSINF (UPV)</strong> y he trabajado como desarrollador full stack en proyectos en equipo de principio a fin. También he desarrollado un <strong>MVP con visión artificial</strong> durante una hackathon.</p>
-          <p>Ahora busco mi <strong>primer puesto como Ingeniero de Software Junior</strong>, en un equipo donde seguir aprendiendo y aportar desde el primer día.</p>
+          <p class="large">Me gusta entender el sistema completo: cómo se modelan los datos, cómo se diseña la lógica de negocio y cómo llega todo a la persona que lo usa.</p>
+          <p>Estudio <strong>Ingeniería Informática en la ETSINF (UPV)</strong>, con formación en diseño, análisis y validación de software. He trabajado como desarrollador full stack en proyectos en equipo de principio a fin y he construido un <strong>MVP con visión artificial</strong> en una hackathon.</p>
+          <p>Busco mi <strong>primer puesto como Ingeniero de Software Junior</strong> en un equipo donde se cuide la calidad del código y pueda aportar desde el primer día.</p>
         </div>
         <dl class="facts reveal">
-          <div><dt><span class="counter" data-target="3">0</span></dt><dd>Proyectos full stack en equipo</dd></div>
-          <div><dt><span class="counter" data-target="1">0</span></dt><dd>Hackathon con MVP funcional</dd></div>
-          <div><dt>3</dt><dd>Idiomas: español, valenciano e inglés</dd></div>
+          <div><dt><span class="counter" data-target="3">0</span></dt><dd>proyectos full stack en equipo</dd></div>
+          <div><dt><span class="counter" data-target="3">0</span></dt><dd>capas: frontend, backend y base de datos</dd></div>
+          <div><dt><span class="counter" data-target="1">0</span></dt><dd>MVP con IA en hackathon</dd></div>
         </dl>
       </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section container">
+    <!-- STACK -->
+    <section id="stack" class="section container">
       <header class="section-head reveal">
-        <span class="section-num">02</span>
-        <h2>Habilidades</h2>
+        <span class="section-num">02 <span>// stack</span></span>
+        <h2>Stack técnico</h2>
       </header>
       <div class="section-body">
-        <dl class="skills">
-          <div class="skill-row reveal"><dt>Lenguajes</dt><dd><span>Java</span><span>C#</span><span>JavaScript</span><span>SQL</span><span class="muted">Python (básico)</span></dd></div>
-          <div class="skill-row reveal"><dt>Desarrollo web</dt><dd><span>React</span><span>HTML</span><span>CSS</span></dd></div>
-          <div class="skill-row reveal"><dt>Bases de datos</dt><dd><span>PostgreSQL</span></dd></div>
-          <div class="skill-row reveal"><dt>Herramientas</dt><dd><span>Git</span><span>GitHub</span><span>Visual Studio</span><span>VS Code</span><span>Worki (TUNE-UP Process)</span></dd></div>
-          <div class="skill-row reveal"><dt>Metodologías</dt><dd><span>Scrum</span><span>Agile</span><span>Trabajo en equipo</span></dd></div>
-        </dl>
+        <div class="file reveal">
+          <div class="file-tab"><span class="file-icon" aria-hidden="true">{ }</span>stack.json</div>
+          <dl class="skills">
+            <div class="skill-row"><dt>lenguajes</dt><dd><span>Java</span><span>C#</span><span>JavaScript</span><span>SQL</span><span class="muted">Python · básico</span></dd></div>
+            <div class="skill-row"><dt>frontend</dt><dd><span>React</span><span>HTML</span><span>CSS</span></dd></div>
+            <div class="skill-row"><dt>backend</dt><dd><span>Java</span><span>C#</span></dd></div>
+            <div class="skill-row"><dt>bases_de_datos</dt><dd><span>PostgreSQL</span><span>SQL</span></dd></div>
+            <div class="skill-row"><dt>herramientas</dt><dd><span>Git</span><span>GitHub</span><span>Visual Studio</span><span>VS Code</span><span>Worki (TUNE-UP)</span></dd></div>
+            <div class="skill-row"><dt>proceso</dt><dd><span>Scrum</span><span>Agile</span><span>Trabajo en equipo</span></dd></div>
+          </dl>
+        </div>
+        <div class="principles reveal">
+          <h3>Formación en ingeniería del software</h3>
+          <ul>
+            <li><span>Diseño de Software</span> Patrones, modelado y arquitectura.</li>
+            <li><span>Análisis y Validación</span> Pruebas y verificación del software.</li>
+            <li><span>Ingeniería del Software</span> Procesos, requisitos y ciclo de vida.</li>
+            <li><span>Bases de Datos</span> Modelado relacional y SQL.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- PROYECTOS -->
     <section id="proyectos" class="section container">
       <header class="section-head reveal">
-        <span class="section-num">03</span>
+        <span class="section-num">03 <span>// proyectos</span></span>
         <h2>Proyectos</h2>
       </header>
       <div class="section-body">
         <div class="filters reveal" role="tablist" aria-label="Filtrar proyectos">
-          <button class="filter active" data-filter="all" role="tab" aria-selected="true">Todos</button>
-          <button class="filter" data-filter="uni" role="tab" aria-selected="false">Universidad</button>
-          <button class="filter" data-filter="hack" role="tab" aria-selected="false">Hackathon</button>
-          <button class="filter" data-filter="personal" role="tab" aria-selected="false">Personal</button>
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">todos</button>
+          <button class="filter" data-filter="uni" role="tab" aria-selected="false">universidad</button>
+          <button class="filter" data-filter="hack" role="tab" aria-selected="false">hackathon</button>
+          <button class="filter" data-filter="personal" role="tab" aria-selected="false">personal</button>
         </div>
         <div class="projects">
           <article class="project reveal" data-cat="uni">
-            <div class="project-meta"><span>UPV · Equipo de 4</span><span class="tag tag-live">En desarrollo</span></div>
-            <h3>Life Quest</h3>
-            <p class="project-sub">Aplicación web gamificada de hábitos</p>
-            <p>Convierte los hábitos en misiones con progresión. Participo en el backend, el frontend y la base de datos.</p>
-            <ul class="stack"><li>Java</li><li>React</li><li>JavaScript</li><li>PostgreSQL</li></ul>
-            <p class="project-date">09/2026 – actualidad</p>
+            <header class="project-head">
+              <div>
+                <h3>Life Quest</h3>
+                <p class="project-sub">Aplicación web gamificada de hábitos</p>
+              </div>
+              <span class="tag tag-live">● en desarrollo</span>
+            </header>
+            <p>Convierte los hábitos en misiones con progresión. Participo en el desarrollo de todas las capas.</p>
+            <div class="arch" aria-label="Arquitectura: React, Java y PostgreSQL">
+              <span class="layer"><small>frontend</small>React</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>backend</small>Java</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>datos</small>PostgreSQL</span>
+            </div>
+            <dl class="project-facts">
+              <div><dt>rol</dt><dd>Full stack</dd></div>
+              <div><dt>equipo</dt><dd>4 personas · UPV</dd></div>
+              <div><dt>fecha</dt><dd>09/2026 – hoy</dd></div>
+            </dl>
           </article>
+
           <article class="project reveal" data-cat="hack">
-            <div class="project-meta"><span>Hackathon</span><span class="tag">MVP</span></div>
-            <h3>SmartCart</h3>
-            <p class="project-sub">Tienda sin cajas con visión artificial</p>
-            <p>Asigna un identificador a cada cliente al entrar, detecta con IA los productos que coge y los añade a su carrito para el pago automático a la salida.</p>
-            <ul class="stack"><li>Java</li><li>Visión artificial</li></ul>
-            <p class="project-date">10/2026</p>
+            <header class="project-head">
+              <div>
+                <h3>SmartCart</h3>
+                <p class="project-sub">Tienda sin cajas con visión artificial</p>
+              </div>
+              <span class="tag">MVP</span>
+            </header>
+            <p>Asigna un identificador a cada cliente al entrar, detecta con IA los productos que coge y los añade a su carrito para el pago automático a la salida. Integré modelos gratuitos de visión artificial en un prototipo funcional en tiempo de hackathon.</p>
+            <div class="arch" aria-label="Flujo: entrada, detección con IA, carrito y pago">
+              <span class="layer"><small>entrada</small>ID cliente</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>visión</small>IA</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>salida</small>Pago</span>
+            </div>
+            <dl class="project-facts">
+              <div><dt>stack</dt><dd>Java · visión artificial</dd></div>
+              <div><dt>contexto</dt><dd>Hackathon</dd></div>
+              <div><dt>fecha</dt><dd>10/2026</dd></div>
+            </dl>
           </article>
+
           <article class="project reveal" data-cat="uni">
-            <div class="project-meta"><span>UPV · Equipo de 4</span><span class="tag">Completado</span></div>
-            <h3>Votify</h3>
-            <p class="project-sub">Gestión de votaciones en eventos públicos</p>
+            <header class="project-head">
+              <div>
+                <h3>Votify</h3>
+                <p class="project-sub">Gestión de votaciones en eventos públicos</p>
+              </div>
+              <span class="tag">✓ completado</span>
+            </header>
             <p>Aplicación web para crear y gestionar votaciones. Participé en todas las capas de la aplicación.</p>
-            <ul class="stack"><li>C#</li><li>PostgreSQL</li><li>Visual Studio</li></ul>
-            <p class="project-date">02/2026 – 06/2026</p>
+            <div class="arch" aria-label="Arquitectura: aplicación en C# y PostgreSQL">
+              <span class="layer"><small>aplicación</small>C#</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>datos</small>PostgreSQL</span>
+            </div>
+            <dl class="project-facts">
+              <div><dt>rol</dt><dd>Full stack</dd></div>
+              <div><dt>equipo</dt><dd>4 personas · UPV</dd></div>
+              <div><dt>fecha</dt><dd>02/2026 – 06/2026</dd></div>
+            </dl>
           </article>
+
           <article class="project reveal" data-cat="personal">
-            <div class="project-meta"><span>Personal</span><a class="tag tag-link" href="https://github.com/XeG05/XeG05.github.io" target="_blank" rel="noopener">Código ↗</a></div>
-            <h3>Portfolio</h3>
-            <p class="project-sub">Esta web</p>
-            <p>Sitio personal accesible y responsive, con modo claro y oscuro automático. Sin frameworks ni dependencias.</p>
-            <ul class="stack"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-            <p class="project-date">2026</p>
+            <header class="project-head">
+              <div>
+                <h3>Portfolio</h3>
+                <p class="project-sub">Esta web</p>
+              </div>
+              <a class="tag tag-link" href="https://github.com/XeG05/XeG05.github.io" target="_blank" rel="noopener">código ↗</a>
+            </header>
+            <p>Sitio estático accesible y responsive, con modo claro y oscuro. Sin frameworks ni dependencias, desplegado con GitHub Pages.</p>
+            <div class="arch" aria-label="Despliegue: HTML, CSS y JavaScript en GitHub Pages">
+              <span class="layer"><small>código</small>HTML · CSS · JS</span><i aria-hidden="true">→</i>
+              <span class="layer"><small>deploy</small>GitHub Pages</span>
+            </div>
+            <dl class="project-facts">
+              <div><dt>rol</dt><dd>Autor</dd></div>
+              <div><dt>tipo</dt><dd>Personal</dd></div>
+              <div><dt>fecha</dt><dd>2026</dd></div>
+            </dl>
           </article>
         </div>
       </div>
@@ -150,28 +213,31 @@
     <!-- FORMACIÓN -->
     <section id="formacion" class="section container">
       <header class="section-head reveal">
-        <span class="section-num">04</span>
+        <span class="section-num">04 <span>// formacion</span></span>
         <h2>Formación</h2>
       </header>
       <div class="section-body">
-        <ol class="timeline">
+        <ol class="gitlog">
           <li class="reveal">
-            <p class="when">09/2022 – actualidad</p>
+            <span class="node" aria-hidden="true"></span>
+            <p class="when"><span class="branch">HEAD → main</span> 09/2022 – actualidad</p>
             <h3>Grado en Ingeniería Informática</h3>
             <p class="where">Universitat Politècnica de València · ETSINF</p>
             <p>Asignaturas destacadas: Diseño de Software, Análisis y Validación de Software, Ingeniería del Software, Bases de Datos y Programación.</p>
           </li>
           <li class="reveal">
-            <p class="when">Idiomas</p>
+            <span class="node" aria-hidden="true"></span>
+            <p class="when">idiomas</p>
             <h3>Español, valenciano e inglés</h3>
             <ul class="langs">
-              <li><strong>Español</strong> Nativo</li>
+              <li><strong>Español</strong> nativo</li>
               <li><strong>Valenciano</strong> B2</li>
               <li><strong>Inglés</strong> B1 · preparando Cambridge B2 First</li>
             </ul>
           </li>
           <li class="reveal">
-            <p class="when">Otros</p>
+            <span class="node" aria-hidden="true"></span>
+            <p class="when">otros</p>
             <h3>Información adicional</h3>
             <p>Carné de conducir B. Disponibilidad completa e incorporación inmediata.</p>
           </li>
@@ -182,10 +248,13 @@
     <!-- CONTACTO -->
     <section id="contacto" class="section container contact">
       <div class="contact-card reveal">
-        <p class="eyebrow">Contacto</p>
-        <h2>¿Buscas un perfil junior con ganas de aportar?</h2>
+        <span class="section-num">05 <span>// contacto</span></span>
+        <h2>¿Buscas un ingeniero junior para tu equipo?</h2>
         <p class="lead">Estoy abierto a ofertas de empleo en desarrollo de software. Escríbeme y hablamos.</p>
-        <a href="mailto:ganenxia@gmail.com" class="mail-link">ganenxia@gmail.com <span aria-hidden="true">→</span></a>
+        <div class="cmd">
+          <code><span class="prompt">$</span> mail <a href="mailto:ganenxia@gmail.com">ganenxia@gmail.com</a></code>
+          <button class="copy" type="button" data-copy="ganenxia@gmail.com" aria-label="Copiar email">copiar</button>
+        </div>
         <ul class="links">
           <li><a href="https://www.linkedin.com/in/ganen-xia-259152377" target="_blank" rel="noopener">LinkedIn ↗</a></li>
           <li><a href="https://github.com/XeG05" target="_blank" rel="noopener">GitHub ↗</a></li>
@@ -194,9 +263,14 @@
     </section>
   </main>
 
-  <footer class="footer container">
-    <span>© <span id="year"></span> Ganen Xia</span>
-    <span>Valencia, España</span>
+  <footer class="statusbar">
+    <div class="container statusbar-inner">
+      <span><span class="ok">●</span> main</span>
+      <span class="hide-sm">HTML · CSS · JS</span>
+      <span class="hide-sm">UTF-8</span>
+      <span class="push">Valencia, ES</span>
+      <span>© <span id="year"></span> Ganen Xia</span>
+    </div>
   </footer>
 
   <script src="script.js"></script>

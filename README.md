@@ -65,15 +65,15 @@ Estudiante de **Ingeniería Informática en la Universitat Politècnica de Valè
 
 ## ✨ Sobre este portfolio
 
-Web personal con un diseño sobrio de estilo editorial, hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin compilación y lista para **GitHub Pages**.
+Web personal con estética de herramienta de desarrollo, hecha con **HTML, CSS y JavaScript puro**: sin frameworks, sin compilación y lista para **GitHub Pages**.
 
-- **Diseño:** tipografía serif (Newsreader) para los títulos e Inter para el texto, con un único color de acento.
-- **Modo claro y oscuro** automático, según la preferencia del sistema.
-- **Animaciones discretas:** entrada escalonada del encabezado, aparición de secciones al hacer scroll, contadores y barra de progreso de lectura.
-- **Navegación:** se marca la sección visible y hay un menú adaptado a móvil.
-- **Proyectos filtrables** por Universidad, Hackathon o Personal.
-- **Accesible:** foco visible, etiquetas ARIA y respeto a `prefers-reduced-motion`.
-- **Foto opcional:** guarda una imagen cuadrada como `foto.jpg` y descomenta la línea indicada en `index.html`. Si no hay foto, se muestra un monograma.
+- **Terminal animada** en la portada: `whoami`, `cat perfil.json` y `ls proyectos/` se escriben solos.
+- **Stack técnico** presentado como un archivo `stack.json`, junto a las asignaturas de ingeniería del software.
+- **Proyectos con arquitectura:** cada tarjeta muestra sus capas (frontend → backend → datos), el rol, el equipo y las fechas. Se pueden filtrar.
+- **Formación en formato `git log`** y contacto como comando `mail`, con botón para copiar el email.
+- **Barra de estado** al pie, al estilo de un editor.
+- **Diseño:** Inter y JetBrains Mono, fondo de cuadrícula sutil y modo claro u oscuro automático.
+- **Accesible:** foco visible, etiquetas ARIA y respeto a `prefers-reduced-motion` (la terminal aparece completa, sin animación).
 
 ### Estructura
 
@@ -81,7 +81,7 @@ Web personal con un diseño sobrio de estilo editorial, hecha con **HTML, CSS y 
 .
 ├── index.html   # Contenido y secciones
 ├── style.css    # Estilos, tema claro/oscuro y animaciones
-├── script.js    # Interacciones
+├── script.js    # Terminal animada e interacciones
 └── README.md
 ```
 
