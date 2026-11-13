@@ -86,7 +86,7 @@ Web personal con estética de herramienta de desarrollo, hecha con **HTML, CSS y
 ```
 
 ## Portfolio GitPages
-**https://XeG05.github.io** 🎉
+**xeg05.github.io/XeG05/** 🎉
 
 ## 📈 Estadísticas
 
